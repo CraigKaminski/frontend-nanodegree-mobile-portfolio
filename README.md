@@ -1,3 +1,19 @@
+## Instructions to Perform PageSpeed Insights Evaluation
+
+1. Update line 36 of Gruntfile.js with the port number of your web server.
+2. Update line 42 of Gruntfile.js with the path to your web page.
+3. Run `npm install` to load the required node modules.
+4. run `grunt` to have PageSpeed Insights test the web page.
+
+## Changes Made to Achieve a PageSpeed Insights Score Greater than 90
+
+* Inlined <link href="//fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
+* Specified media as print for <link href="css/print.css" rel="stylesheet">
+* Set async on <script src="http://www.google-analytics.com/analytics.js"></script>
+* Performed lossless compress on img/profilepic.jpg and saved the new file as img/profilepic_compressed.jpg.
+* Resized and performed lossless compression on views/images/pizzeria.jpg and saved the new version as views/images/pizzeria_small.jpg.
+* Created .htaccess file to enable browser caching and compression.
+
 ## Website Performance Optimization portfolio project
 
 Your challenge, if you wish to accept it (and we sure hope you will), is to optimize this online portfolio for speed! In particular, optimize the critical rendering path and make this page render as quickly as possible by applying the techniques you've picked up in the [Critical Rendering Path course](https://www.udacity.com/course/ud884).
